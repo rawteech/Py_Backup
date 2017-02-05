@@ -16,3 +16,6 @@ target = target_dir + os.sep + \
 if not os.path.exists(target_dir):
 	os.mkdir(target_dir) # craete the directory
 
+# Use the zip command to archive the files in a zip
+zip_command = "zip -r {0} {1}". format(target, ' '.join(source))
+
