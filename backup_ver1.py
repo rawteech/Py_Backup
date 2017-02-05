@@ -3,10 +3,10 @@ import time
 
 
 # Specify source of file and directories to be backed up
-source = ['/Desktop/funny']
+source = ['/home/rawteech/Desktop/funny']
 
 # Specify the target directory of the back-up
-target_dir = ['/Desktop/backup']
+target_dir = '/home/rawteech/Desktop/backup'
 
 # The name of the zip archive is the current date and time
 target = target_dir + os.sep + \
