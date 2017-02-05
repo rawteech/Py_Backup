@@ -19,3 +19,11 @@ if not os.path.exists(target_dir):
 # Use the zip command to archive the files in a zip
 zip_command = "zip -r {0} {1}". format(target, ' '.join(source))
 
+# Run the backup
+print "Zip command is: "
+print zip_command
+print "Running:"
+if os.system(zip_command) == 0:
+	print "Successful backup to ", target
+else:
+	print "Backup FAILED!"
