@@ -17,6 +17,9 @@ today = target_dir + os.sep + time.strftime('%Y%m%d')
 # make the current time the name of the zip file
 now = time.strftime('%H%M%S')
 
+# take comment from user and add to name of zip file
+comment = raw_input('Enter a comment --> ')
+
 # then set the name of the zip file
 target = today + os.sep + now + '.zip'
 
