@@ -19,9 +19,12 @@ now = time.strftime('%H%M%S')
 
 # take comment from user and add to name of zip file
 comment = raw_input('Enter a comment --> ')
-
-# then set the name of the zip file
-target = today + os.sep + now + '.zip'
+# check if comment was entered
+if len(comment) == 0:
+	target = today + os.sep + now + '.zip'
+else:
+	target = today + os.sep + now + '_' + 
+		comment.replace(' ', '_') + '.zip'
 
 # create sub-directory if not existing
 if not os.path.exists(today):
